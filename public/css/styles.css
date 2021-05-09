@@ -1,0 +1,51 @@
+h1{
+    font-family: Roboto;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.nav{
+    background-color: dimgray;
+    font-family: Roboto;
+    margin-right: 12px;
+}
+
+footer{
+    background-color: dimgray;
+    font-family: Roboto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container{
+    margin-top: 15px;
+    position: relative;
+}
+#background{
+    border:1px solid;
+    height: 350px;
+    justify-content: center;
+    -webkit-box-shadow: 9px 7px 5px rgba(202, 202, 202, 0.77);
+	-moz-box-shadow:    9px 7px 5px rgba(202, 202, 202, 0.77);
+	box-shadow:         9px 7px 5px rgba(202, 202, 202, 0.77);
+    padding: 50px;
+    border-radius: 10px;
+    border-color: rgba(235, 235, 235, 0.288);
+}
+
+.cadastrobtn{
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+#homeTable{
+    padding: 25px;
+    margin-top: 50px;
+    border: 1px solid;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow:  9px 7px 5px rgba(202, 202, 202, 0.77); 
+    border-color: rgba(235, 235, 235, 0.288);
+}
