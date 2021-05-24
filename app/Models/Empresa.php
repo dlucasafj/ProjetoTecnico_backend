@@ -12,6 +12,6 @@ class Empresa extends Model
 
 
     public function federacao(){
-        return $this->belongsTo('App\Models\Federacao');
+        return $this->belongsTo(Federacao::class,'federacao_id','id');
     }
 }

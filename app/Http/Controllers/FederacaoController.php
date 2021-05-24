@@ -20,9 +20,11 @@ class FederacaoController extends Controller
             $federacao = Federacao::all();
         }
 
+      
 
-        return view('/federacao/listEmpresa',['federacao' => $federacao,'search'=>$search]);
 
+        return view('/federacao/listFederacao',['federacao' => $federacao]);
+         
     }
 
 
@@ -55,10 +57,31 @@ class FederacaoController extends Controller
         }
    }
 
+   public function pesquisaEmp(){
+        $search = request('search');
+       
+        if($search){
+            $federacao = Federacao::where([
+                ['nome','like','%'.$search.'%']
+            ])->first();
+                
+            $empresas= $federacao->empresas()->get();
+        }else{
+             $empresas = Federacao::all();
+        }
+        return view('federacao/listEmpFed',['empresas'=>$empresas,'search'=>$search]);
+
+
+    }     
+   
+
    public function lista(){
-    return view('federacao/listEmpresa');
+    return view('federacao/listFderacao');
    }
 
+   public function empLista(){
+       return view('federacao/listEmpFed');
+   }
 
 
 }

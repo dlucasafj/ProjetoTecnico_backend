@@ -4,6 +4,14 @@ h1{
     margin-top: 0;
     margin-bottom: 50px;
 }
+h3{
+    margin: 20px;
+}
+body{
+    background: url("../img/architecture-1868667_1920.jpg");
+    
+}
+
 
 .nav{
     background-color: dimgray;
@@ -12,17 +20,39 @@ h1{
 }
 
 footer{
-    background-color: dimgray;
+    background-color: rgba(209, 209, 209, 0.541);
     font-family: Roboto;
+    color: black;
     position: absolute;
     bottom: 0;
     width: 100%;
+    position: fixed;
+    padding: 8px;
 }
 
 .container{
     margin-top: 15px;
     position: relative;
+    width: 1000px; 
 }
+
+#empFed{
+    padding: 25px;
+    margin-top: 50px;
+    border: 1px solid;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 900px;
+    text-align: center;
+    /* box-shadow:  9px 7px 5px rgba(202, 202, 202, 0.77);  */
+    border-color: rgba(235, 235, 235, 0.288);
+}
+
+#ef{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 5px;
+}
+
 #background{
     border:1px solid;
     height: 350px;
@@ -33,6 +63,7 @@ footer{
     padding: 50px;
     border-radius: 10px;
     border-color: rgba(235, 235, 235, 0.288);
+    
 }
 
 .cadastrobtn{
@@ -46,6 +77,88 @@ footer{
     border: 1px solid;
     margin-bottom: 15px;
     border-radius: 10px;
-    box-shadow:  9px 7px 5px rgba(202, 202, 202, 0.77); 
+    width: 900px;
+    text-align: center;
+    /* box-shadow:  9px 7px 5px rgba(202, 202, 202, 0.77);  */
     border-color: rgba(235, 235, 235, 0.288);
+}
+.login{
+    background-color: rgb(185, 133, 64);
+}
+#principal{
+   /* background-image: url('../img/background.jpeg'); */
+   background-color: red;
+   width: 950px;
+   
+}
+.pesquisa{
+    margin-top: 25px;
+    width: auto;
+}
+
+.corpo1{
+    border: 1px solid rgb(197, 197, 197);
+    
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+#banner{
+    background-image: url('/img/background.jpeg');
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 7px 5px 3px rgba(202, 202, 202, 0.77);
+}
+
+#missao{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom:8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 7px 5px 3px rgba(202, 202, 202, 0.77);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#visao{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom:8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 7px 5px 3px rgba(202, 202, 202, 0.77);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#valores{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom:8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 7px 5px 3px rgba(202, 202, 202, 0.77);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#geral{
+    background-color: rgb(231, 231, 231);
+    border: 1px solid rgba(42, 43, 43);
+    
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.produtos{
+    background-color: rgb(247, 247, 247);
+    padding: 10px;
+}
+
+.produtos h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card{
+    margin: 8px;
+    box-shadow: 7px 5px 3px rgba(202, 202, 202, 0.77);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
