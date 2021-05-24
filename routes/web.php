@@ -15,18 +15,25 @@ use App\Http\Controllers\FederacaoController;
 */
 
 
-Route::get('/',[EmpresaController::class,'getAllEmpresa' ]);
-Route::get('/home',[EmpresaController::class,'getAllEmpresa']);
+Route::get('/', function(){
+    return view('ecompjr/ecompjr');
+});
+
+// Route::get('/',[EmpresaController::class,'getAllEmpresa']);
+Route::get('/empresa',[EmpresaController::class,'getAllEmpresa']);
 Route::get('/federacao/create',[FederacaoController::class,'create']);
 Route::post('/federacao',[FederacaoController::class, 'store']);
 
-Route::get('/federacao/listEmpresa',[FederacaoController::class,'lista']);
-Route::get('/federacao/listEmpresa',[FederacaoController::class,'getFederacao']);
+Route::get('/federacao/listFederacao',[FederacaoController::class,'lista']);
+Route::get('/federacao/listFederacao',[FederacaoController::class,'getFederacao']);
+Route::get('/federacao/listEmpFed',[FederacaoController::class,'empLista']);
+Route::get('/federacao/listEmpFed',[FederacaoController::class,'pesquisaEmp']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+    return view('ecompjr/ecompjr');
+})->name('ecompjr');
 
 
 Route::get('/empresas/create',[EmpresaController::class,'create']);
 Route::post('/empresas',[EmpresaController::class,'store']);
+

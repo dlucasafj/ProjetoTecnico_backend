@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container">
-    <div id='background'>
+    <div class='corpo1'>
         <h1>Cadastro Federação</h1>
         <form class='row g-3' action='/federacao' method='POST'>
             @csrf

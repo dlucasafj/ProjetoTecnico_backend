@@ -12,6 +12,6 @@ class Federacao extends Model
 
 
     public function empresas(){
-        return $this->hasMany('App\Models\Empresa'); 
+        return $this->hasMany(Empresa::class, 'federacao_id', 'id'); 
     }
 }
